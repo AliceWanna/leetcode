@@ -2,7 +2,38 @@ package com.leetCode;
 
 import org.junit.Test;
 
+import java.util.Random;
+
 public class forTest {
+
+    @Test
+    public void test3() {
+        Random random = new Random();
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextInt(10));
+    }
+
+        @Test
+    public void test2(){
+        int a = -12332321;
+        System.out.println(a%10);
+    }
 
     @Test
     public void test1(){
