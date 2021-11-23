@@ -2,31 +2,32 @@ package com.leetCode;
 
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class forTest {
 
+
     @Test
+    public void test4() {
+
+        int tmp =-2147483648;
+        tmp |= tmp>>>1;
+        tmp |= tmp>>>2;
+        tmp |= tmp>>>4;
+        tmp |= tmp>>>8;
+        tmp |= tmp>>>16;
+        System.out.println(tmp);
+    }
+
+        @Test
     public void test3() {
         Random random = new Random();
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(10));
+        int[] arr = new int[10];
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            arr[random.nextInt(10)]++;
+        }
+        System.out.println(Arrays.toString(arr));
     }
 
         @Test
